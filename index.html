@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>ToDo List</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <form id="taskForm">
+            <label for="taskInput">Nova Tarefa:</label>
+            <input type="text" id="taskInput" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <ul id="taskList"></ul>
+    </div>
+    <div class="search-container">
+        <h3>Buscar por Id</h3>
+        <input type="number" id="taskIdInput">
+        <button onclick="searchTaskById()">Buscar</button>
+    </div>
+    <div id="searchResult"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
